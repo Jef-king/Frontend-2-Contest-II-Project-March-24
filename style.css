@@ -3,6 +3,9 @@ body{
     color:white;
     margin:20px 30px;
 }  
+.error{
+    color:red;
+}
 .btn{
     width:100px;
     padding: 10px;
