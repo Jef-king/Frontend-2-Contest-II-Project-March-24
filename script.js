@@ -15,6 +15,9 @@ decrement.addEventListener("click",()=>{
     }else{
         count.innerText=x;
     }
+    if(x==0){
+        clear.style.display="none";
+    }
 });
 increment.addEventListener("click",()=>{
     x++;
@@ -22,9 +25,12 @@ increment.addEventListener("click",()=>{
     if(x==1){
         decrement.disabled=false;
         error.innerHTML="";
+        clear.style.display="inline";
+
     }
 });
 clear.addEventListener("click",()=>{
     x=0;
     count.innerText=x;
+    clear.style.display="none";
 });
